@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="扫描结果/查询" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-9f-L0j">
+                                <rect key="frame" x="38" y="170" width="244" height="30"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pei-lK-bPP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7hT-gC-6gD"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-2L-pVV" userLabel="扫描">
+                                <rect key="frame" x="96" y="60" width="128" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9rX-ZA-zD3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-gL-4OX">
+                                <rect key="frame" x="36" y="266" width="248" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jIB-Qu-9Mx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ox9-39-f05">
+                                <rect key="frame" x="96" y="218" width="128" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="glx-no-ts0"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="英译汉"/>
+                                    <segment title="汉译英"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfy-Oc-S9L">
+                                <rect key="frame" x="71" y="344" width="178" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68998751420000004" blue="0.86064460580000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="75T-We-hKT"/>
+                                </constraints>
+                                <state key="normal" title="不满意？使用Apple词典">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-R7-t4D">
+                                <rect key="frame" x="38" y="169" width="244" height="2"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Drl-3D-fJf">
+                                <rect key="frame" x="36" y="374" width="118" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cZ1-jv-EwQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cZ1-jv-EwQ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.68998751420000004" blue="0.86064460580000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P4E-9f-L0j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="069-5R-cDv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Drl-3D-fJf" secondAttribute="trailing" constant="150" id="5V2-7i-WUf"/>
+                            <constraint firstItem="mfy-Oc-S9L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="7FN-57-awV"/>
+                            <constraint firstItem="mfy-Oc-S9L" firstAttribute="top" secondItem="OSw-gL-4OX" secondAttribute="bottom" constant="18" id="Adl-cH-Xib"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1L-2L-pVV" secondAttribute="trailing" constant="80" id="EDt-yq-Z22"/>
+                            <constraint firstItem="ox9-39-f05" firstAttribute="top" secondItem="P4E-9f-L0j" secondAttribute="bottom" constant="18" id="Giy-N6-Rl5"/>
+                            <constraint firstItem="ox9-39-f05" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="Gw8-bl-pKa"/>
+                            <constraint firstItem="Drl-3D-fJf" firstAttribute="top" secondItem="mfy-Oc-S9L" secondAttribute="bottom" id="Lvi-hr-qdR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P4E-9f-L0j" secondAttribute="trailing" constant="22" id="SBg-qX-pjx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OSw-gL-4OX" secondAttribute="trailing" constant="20" id="ST5-Tc-DHe"/>
+                            <constraint firstItem="OSw-gL-4OX" firstAttribute="top" secondItem="ox9-39-f05" secondAttribute="bottom" constant="18" id="TWy-jU-NQB"/>
+                            <constraint firstItem="OSw-gL-4OX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="UmN-ZE-aRW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kT6-R7-t4D" secondAttribute="trailing" constant="22" id="VhS-eg-g5K"/>
+                            <constraint firstItem="Drl-3D-fJf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ZTj-aK-fBb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Drl-3D-fJf" secondAttribute="bottom" id="avM-tg-7N4"/>
+                            <constraint firstItem="l1L-2L-pVV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="bs8-Ae-uFp"/>
+                            <constraint firstItem="kT6-R7-t4D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="fO5-P1-EuS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mfy-Oc-S9L" secondAttribute="trailing" constant="55" id="gcx-PT-fel"/>
+                            <constraint firstItem="P4E-9f-L0j" firstAttribute="top" secondItem="l1L-2L-pVV" secondAttribute="bottom" constant="80" id="gjR-yP-joD"/>
+                            <constraint firstItem="P4E-9f-L0j" firstAttribute="top" secondItem="kT6-R7-t4D" secondAttribute="bottom" constant="-1" id="uU9-DL-BLL"/>
+                            <constraint firstItem="l1L-2L-pVV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="uZg-VI-25n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ox9-39-f05" secondAttribute="trailing" constant="80" id="z1k-Ap-0KL"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="changeDicButton" destination="mfy-Oc-S9L" id="rmb-bf-jF4"/>
+                        <outlet property="scanResultTextField" destination="P4E-9f-L0j" id="fhg-GT-2hM"/>
+                        <outlet property="scanningProgressView" destination="kT6-R7-t4D" id="rNe-OX-Gt4"/>
+                        <outlet property="scanningTextField" destination="l1L-2L-pVV" id="y09-C1-0SC"/>
+                        <outlet property="testImageView" destination="Drl-3D-fJf" id="Bpf-g4-TWT"/>
+                        <outlet property="transModeSegement" destination="ox9-39-f05" id="2aP-g4-XXQ"/>
+                        <outlet property="transResultTextView" destination="OSw-gL-4OX" id="chL-VJ-wrb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="185"/>
+        </scene>
+    </scenes>
+</document>

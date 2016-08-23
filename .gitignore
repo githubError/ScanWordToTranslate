@@ -6,6 +6,10 @@
 build/
 DerivedData/
 
+**/test3/G8Tesseract_iOS 
+**/test3/tessdata
+*.DS_Store
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
