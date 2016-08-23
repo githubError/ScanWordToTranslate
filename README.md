@@ -1,0 +1,2 @@
+# ScanWordToTranslate
+一款基于Tesseract光学文字识别的扫词翻译词典
